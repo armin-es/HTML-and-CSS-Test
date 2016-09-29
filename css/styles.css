@@ -3,45 +3,41 @@ Course: Responsive Website Basics: Code with HTML, CSS, and JavaScript
  -------------------------------------------------------------------*/
 
 /* Setting the general font properties of the header in the html code
-(when the browser is smaller than 500px): */
+(when the browser width is smaller than 500px): */
 h1 {
 	font-family: sans-serif;
 	color: darkblue;
 	text-align: center; /* Centres the header around the middle of the
 	browser*/
-	margin-top: 15px;
-	margin-left: 30px;
-	margin-right: 30px;
+	margin: 15px 30px; /* margin shorthand property, setting top-bottom
+	and right-left margins with only two values */
 
 }
 
 /* The background turns grey when the mouse pointer hovers over the
 header: */
-h1: hover {
+h1:hover {
 	background-color: lightgrey;
 }
 
 /* For browser width between 500-999px the header background and text
  change: */
-@media (min-width: 500px){
+@media only screen and (min-width: 500px) and (max-width: 999px) {
 	h1 {
 	background: lightblue;
-	font-size: 250%; /* font size 250% of the initial size set by
-	browser*/
-	font-style: italic;
+	font: italic 250% sans-serif; /* font shorthand property:
+	size 250% of the initial size set by browser*/
 	}
 
 }
 
 /* For browser width greater than 999px the header background and text
 change: */
-@media (min-width: 1000px){
+@media only screen and (min-width: 1000px){
 	h1 {
 	background: lightcoral;
-	font-size: 400%;
-	font-weight: bold;
-	font-style: normal; /* Reset the font style */
-	font-variant: small-caps; /* lower case fonts are shown as caps */
+	font: normal small-caps bold 400% sans-serif; /* Font shorthand property:
+	Reset the font style. Lower case fonts are shown as caps */
 	}
 
 }
