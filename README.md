@@ -14,3 +14,7 @@ The styling was applied using:
 - Text alignment
 - Background color
 - Margin
+
+#### Demo:
+
+![Demo gif](https://github.com/armin-es/HTML-and-CSS-Test/blob/master/gif/media-query.gif)
